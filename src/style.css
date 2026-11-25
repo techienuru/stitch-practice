@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body { margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { overscroll-behavior: none; }
+  main > :first-child { margin-top: 0 !important; }
+  main > :last-child { margin-bottom: 0 !important; }
+}
+
+::-webkit-scrollbar { display: none; }
+
+.blueprint-grid {
+  background-color: #fbfcf9;
+  background-image:
+    radial-gradient(#d3dede 0.75px, transparent 0.75px),
+    linear-gradient(to right, rgba(215, 226, 226, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(215, 226, 226, 0.4) 1px, transparent 1px);
+  background-size: 24px 24px, 96px 96px, 96px 96px;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+
+.status-ping { animation: pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+.mobile-nav { display: none; }
+
+.theme-dark,
+.theme-dark .bg-surface,
+.theme-dark main,
+.theme-dark header {
+  background-color: #102434 !important;
+  color: #fbfcf9;
+}
+.theme-dark .bg-surface-container-lowest { background-color: #1c3545 !important; }
+.theme-dark .bg-surface-container-low,
+.theme-dark .bg-surface-container,
+.theme-dark .bg-surface-container-high,
+.theme-dark .bg-surface-container-highest { background-color: #274355 !important; }
+.theme-dark .text-on-surface,
+.theme-dark .text-on-background { color: #fbfcf9 !important; }
+.theme-dark .text-secondary,
+.theme-dark .text-on-surface-variant { color: #b5c8d0 !important; }
+.theme-dark [class*="border-outline"] { border-color: #496273 !important; }
+.theme-dark .bg-primary-container { background-color: #f36f52 !important; }
+.theme-dark .text-on-primary-container { color: #102434 !important; }
+.theme-dark input,
+.theme-dark textarea,
+.theme-dark select { color: #102434; }
+
+@media (max-width: 1439px) {
+  .mobile-nav {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem max(0.75rem, env(safe-area-inset-bottom));
+    border-top: 1px solid #d7e2e2;
+    background: rgba(251, 252, 249, 0.96);
+    backdrop-filter: blur(12px);
+    color: #102434;
+    font: 600 0.75rem "IBM Plex Mono", monospace;
+  }
+  .mobile-nav a { padding: 0.4rem; }
+  #root { padding-bottom: 3.5rem; }
+}

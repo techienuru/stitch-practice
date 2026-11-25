@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>404 — Route Not Found | Ibrahim Nurudeen Shehu</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#102434',
+            mist: '#edf3f3',
+            'mist-subtle': '#f4f8f8',
+            'warm-white': '#fbfcf9',
+            coral: '#f36f52',
+            'coral-hover': '#e0593b',
+            'coral-subtle': '#fdf2ef',
+            line: '#d7e2e2',
+            'line-strong': '#b8c9c9',
+            muted: '#5a6e78',
+            dim: '#8aa0aa'
+          },
+          fontFamily: {
+            display: ['"Space Grotesk"', 'sans-serif'],
+            sans: ['"DM Sans"', 'sans-serif'],
+            mono: ['"IBM Plex Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Architectural Blueprint Grid Pattern */
+    .blueprint-grid {
+      background-color: #fbfcf9;
+      background-image:
+        radial-gradient(#d3dede 0.75px, transparent 0.75px),
+        linear-gradient(to right, rgba(215, 226, 226, 0.4) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(215, 226, 226, 0.4) 1px, transparent 1px);
+      background-size: 24px 24px, 96px 96px, 96px 96px;
+    }
+
+    @keyframes pulse-subtle {
+      0%, 100% { opacity: 0.8; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.08); }
+    }
+    .status-ping {
+      animation: pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+  </style>
+</head>
+<body class="blueprint-grid text-ink font-sans min-h-screen flex flex-col justify-between selection:bg-coral selection:text-white antialiased">
+<!-- Top Global Header / Navigation -->
+<header class="w-full border-b border-line bg-warm-white/90 backdrop-blur-md sticky top-0 z-30 transition-all">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Brand & Status Identifier -->
+<div class="flex items-center gap-4">
+<a class="group flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-coral rounded p-1" href="#home">
+<div class="w-9 h-9 border border-ink/20 bg-mist flex items-center justify-center font-display font-bold text-ink text-sm group-hover:border-coral group-hover:text-coral transition-colors shadow-sm">
+            INS
+          </div>
+<div>
+<div class="font-display font-bold tracking-tight text-ink text-sm sm:text-base flex items-center gap-2">
+<span>Ibrahim Nurudeen Shehu</span>
+</div>
+<p class="font-mono text-[11px] text-muted tracking-tight hidden sm:block">Frontend Eng &amp; AI Automation</p>
+</div>
+</a>
+</div>
+<!-- Navigation & Quick Action -->
+<nav class="flex items-center gap-2 sm:gap-6">
+<div class="flex items-center gap-1 sm:gap-2">
+<a class="px-3 py-1.5 text-xs sm:text-sm font-medium text-muted hover:text-ink transition-colors rounded" href="#work">Work</a>
+<a class="px-3 py-1.5 text-xs sm:text-sm font-medium text-muted hover:text-ink transition-colors rounded" href="#journey">Journey</a>
+<a class="hidden md:inline-block px-3 py-1.5 text-xs sm:text-sm font-medium text-muted hover:text-ink transition-colors rounded" href="#skills">Skills</a>
+<a class="px-3 py-1.5 text-xs sm:text-sm font-medium text-muted hover:text-ink transition-colors rounded" href="#contact">Contact</a>
+</div>
+<div class="h-4 w-[1px] bg-line hidden sm:block"></div>
+<a class="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 bg-coral text-white font-mono text-xs font-semibold hover:bg-coral-hover transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-coral focus:ring-offset-2" href="#contact">
+<span>Get in Touch</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
+<line x1="5" x2="19" y1="12" y2="12"></line>
+<polyline points="12 5 19 12 12 19"></polyline>
+</svg>
+</a>
+</nav>
+</div>
+</header>
+<!-- Technical Utility Strip / Breadcrumb -->
+<div class="w-full border-b border-line bg-mist/60 px-6 py-2">
+<div class="max-w-7xl mx-auto flex items-center justify-between text-xs font-mono text-muted"><div class="flex items-center gap-2"><span class="text-dim">SYS_ID:</span><span class="text-ink">ERR_404_ROUTE_NULL</span></div><div class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-coral"></span><span class="font-medium text-coral">STATUS: ROUTE_UNAVAILABLE</span></div></div>
+</div>
+<!-- Main 404 Blueprint Stage -->
+<main class="flex-1 flex flex-col justify-center items-center px-6 py-12 lg:py-16 max-w-6xl mx-auto w-full">
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+<!-- Left Column: Copy & Reconnection Controls -->
+<div class="lg:col-span-6 flex flex-col items-start text-left space-y-6">
+<!-- Status Tag / Taxonomy Label -->
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-mist border border-line rounded-none">
+<span class="w-1.5 h-1.5 bg-coral rounded-full"></span>
+<span class="font-mono text-xs text-ink font-medium tracking-wide">// ERROR CODE: HTTP_404</span>
+</div>
+<!-- Primary Display Heading -->
+<div class="space-y-2">
+<div class="font-mono text-xs sm:text-sm font-semibold tracking-wider text-coral uppercase">
+            [ Unmapped Coordinate ]
+          </div>
+<h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-ink leading-[1.08]">
+            404 / This route goes nowhere.
+          </h1>
+</div>
+<!-- Plain, Concise Explanation -->
+<p class="text-muted text-base sm:text-lg leading-relaxed max-w-xl font-normal">The page may have moved, or the address may be wrong.</p>
+<!-- Technical Telemetry Cardlet -->
+<div class="w-full max-w-md border border-line bg-mist-subtle/80 p-4 space-y-2 font-mono text-xs"><div class="flex items-center justify-between text-dim pb-2 border-b border-line"><span>ROUTE DIAGNOSTIC</span><span>STATUS: UNMAPPED</span></div><div class="grid grid-cols-2 gap-2 pt-1 text-muted"><div><span class="text-dim block text-[10px]">REQUEST</span><span class="text-ink font-medium">GET / unmapped_path</span></div><div><span class="text-dim block text-[10px]">RECOMMENDED ACTION</span><span class="text-coral font-medium">RETURN TO HOME</span></div></div></div>
+<!-- Action Pathways -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<!-- Primary CTA: Back to Home (Reconnection Target) -->
+<a class="group inline-flex items-center justify-center gap-2.5 px-6 py-3.5 bg-coral text-white font-mono text-sm font-semibold hover:bg-coral-hover transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-coral focus:ring-offset-2" href="#home" id="reconnect-target">
+<svg class="w-4 h-4 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24">
+<line x1="19" x2="5" y1="12" y2="12"></line>
+<polyline points="12 19 5 12 12 5"></polyline>
+</svg>
+<span>Back to home</span>
+</a>
+<!-- Secondary Action: View Projects -->
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 border border-line-strong bg-warm-white text-ink font-mono text-sm font-medium hover:border-ink hover:bg-mist transition-all focus:outline-none focus:ring-2 focus:ring-ink focus:ring-offset-2" href="#work">
+<span>View projects</span>
+<svg class="w-3.5 h-3.5 text-muted group-hover:text-ink" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<line x1="7" x2="17" y1="17" y2="7"></line>
+<polyline points="7 7 17 7 17 17"></polyline>
+</svg>
+</a>
+</div>
+<!-- Quick Help Anchors -->
+<div class="pt-2 font-mono text-xs text-muted flex items-center gap-3">
+<span class="text-dim">// ALTERNATE NODES:</span>
+<a class="text-ink underline decoration-line hover:decoration-coral transition-colors" href="#journey">Journey</a>
+<span class="text-line-strong">•</span>
+<a class="text-ink underline decoration-line hover:decoration-coral transition-colors" href="#contact">Direct Contact</a>
+</div>
+</div>
+<!-- Right Column: Architectural Interrupted Signal Path Schematic -->
+<div class="lg:col-span-6 flex justify-center items-center w-full">
+<div class="relative w-full max-w-lg aspect-[4/3] bg-mist-subtle border border-line p-6 shadow-sm overflow-hidden flex flex-col justify-between">
+<!-- Schematic Header Strip -->
+<div class="flex items-center justify-between font-mono text-[11px] text-muted border-b border-line pb-3 z-10">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 border border-ink/40 bg-white"></span>
+<span class="text-ink font-medium tracking-tight">ROUTE_SCHEMATIC: TRACE_04</span>
+</div>
+<div class="text-dim">
+              COORD: [404.0, 0.0]
+            </div>
+</div>
+<!-- Technical SVG Vector Illustration: Interrupted Signal Path Reconnecting to Origin -->
+<div class="relative w-full h-full my-auto flex items-center justify-center">
+<svg class="w-full h-56" fill="none" viewbox="0 0 480 240" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<!-- Signal Pulse Gradient -->
+<lineargradient id="coralFade" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" stop-color="#f36f52" stop-opacity="1"></stop>
+<stop offset="100%" stop-color="#f36f52" stop-opacity="0.2"></stop>
+</lineargradient>
+<pattern height="16" id="grid-dots" patternunits="userSpaceOnUse" width="16">
+<circle cx="1" cy="1" fill="#c6d4d4" opacity="0.6" r="1"></circle>
+</pattern>
+</defs>
+<!-- Interior Grid Backdrop -->
+<rect fill="url(#grid-dots)" height="220" width="460" x="10" y="10"></rect>
+<!-- Baseline Reference Grid Lines -->
+<line stroke="#d7e2e2" stroke-dasharray="2 4" stroke-width="1" x1="20" x2="460" y1="120" y2="120"></line>
+<line stroke="#d7e2e2" stroke-dasharray="2 4" stroke-width="1" x1="160" x2="160" y1="20" y2="220"></line>
+<line stroke="#d7e2e2" stroke-dasharray="2 4" stroke-width="1" x1="320" x2="320" y1="20" y2="220"></line>
+<!-- Source Trace Line (Solid Ink) -->
+<path d="M 30 120 L 130 120 L 170 70 L 220 70" stroke="#102434" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<!-- Source Origin Node -->
+<circle cx="30" cy="120" fill="#102434" r="5"></circle>
+<circle cx="30" cy="120" r="10" stroke="#102434" stroke-dasharray="2 2" stroke-width="1"></circle>
+<text fill="#5a6e78" font-family="'IBM Plex Mono', monospace" font-size="9" text-anchor="middle" x="30" y="145">ORIGIN_IN</text>
+<!-- Mid-point Logic Gate / Routing Node -->
+<rect fill="#fbfcf9" height="20" stroke="#102434" stroke-width="1.5" width="20" x="160" y="60"></rect>
+<text fill="#102434" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle" x="170" y="74">G1</text>
+<!-- The Fracture / Severed Point -->
+<circle cx="220" cy="70" fill="#f36f52" r="4"></circle>
+<line stroke="#f36f52" stroke-linecap="round" stroke-width="2" x1="226" x2="238" y1="64" y2="76"></line>
+<line stroke="#f36f52" stroke-linecap="round" stroke-width="2" x1="238" x2="226" y1="64" y2="76"></line>
+<!-- Broken / Missing Segment Indicator -->
+<path d="M 240 70 L 290 70" stroke="#f36f52" stroke-dasharray="4 4" stroke-linecap="round" stroke-width="1.5"></path>
+<!-- Missing Target Node (Ghost Outline) -->
+<circle cx="300" cy="70" fill="#fbfcf9" r="6" stroke="#f36f52" stroke-dasharray="3 3" stroke-width="1.5"></circle>
+<text fill="#f36f52" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="600" text-anchor="middle" x="300" y="52">[NULL_DEST]</text>
+<!-- Bridge / Re-Routing Loop back toward Home (Coral Telemetry Path) -->
+<!-- The curve gracefully loops downwards and flows back to the left reconnection corridor -->
+<path d="M 220 70 C 220 170, 110 170, 70 170 L 30 170" stroke="#f36f52" stroke-dasharray="6 4" stroke-linecap="round" stroke-width="2"></path>
+<!-- Active Flow Arrow Reconnecting to Home -->
+<polygon fill="#f36f52" points="40,165 30,170 40,175"></polygon>
+<!-- Annotation callout on re-route -->
+<rect fill="#fdf2ef" height="20" stroke="#f36f52" stroke-width="1" width="130" x="75" y="185"></rect>
+<text fill="#f36f52" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="500" text-anchor="middle" x="140" y="198">RE-ROUTE ➔ HOME_NODE</text>
+<!-- Telemetry Label on Top Right -->
+</svg>
+</div>
+<!-- Schematic Base Metadata -->
+<div class="flex items-center justify-between font-mono text-[10px] text-muted border-t border-line pt-2.5 z-10"><div class="flex items-center gap-1.5"><span class="text-dim">TOPOLOGY:</span><span class="text-ink">DISCONNECTED_PATH</span></div><div class="flex items-center gap-1.5 text-coral"><span>ROUTE: UNRESOLVED</span></div></div>
+</div>
+</div>
+</div>
+</main>
+<!-- Compact Portfolio Identity Footer -->
+<footer class="w-full border-t border-line bg-warm-white py-8 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-xs font-mono text-muted"><div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 text-center sm:text-left"><div><span class="font-display font-semibold text-ink">Ibrahim Nurudeen Shehu</span><span class="text-dim ml-2">// Frontend and AI Automation</span></div></div><div class="flex items-center gap-5"><a class="hover:text-coral transition-colors flex items-center gap-1" href="https://github.com" rel="noopener noreferrer" target="_blank"><span>GitHub</span><svg class="w-3 h-3 text-dim" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg></a><a class="hover:text-coral transition-colors flex items-center gap-1" href="https://linkedin.com" rel="noopener noreferrer" target="_blank"><span>LinkedIn</span><svg class="w-3 h-3 text-dim" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg></a><a class="hover:text-coral transition-colors flex items-center gap-1" href="mailto:contact@example.com"><span>Email</span><svg class="w-3 h-3 text-dim" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a></div><div class="text-dim text-center sm:text-right"><span>© 2026 Ibrahim Nurudeen Shehu</span></div></div>
+</footer>
+</body>
+</html>
